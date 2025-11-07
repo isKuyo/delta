@@ -1,45 +1,21 @@
 # Delta Remake
 
-Editor de código moderno em Electron com Monaco Editor.
+Modern code editor built with Electron and Monaco Editor.
 
-## Instalação
+## Installation
 
 ```bash
 npm install
 ```
 
-## Executar
+## Run
 
 ```bash
 npm start
 ```
 
-## Recursos
-
-- ✨ Interface moderna e limpa
-- 📝 Monaco Editor (mesmo do VS Code)
-- 🎨 Tema escuro personalizado
-- 📑 Sistema de abas funcional
-- 🎯 Controle de janela customizado
-- 🔍 Filtros de arquivos
-- 🚀 Animações suaves
-
-## Estrutura
-
-```
-delta remake/
-├── img/                 # Ícones
-├── index.html          # Interface
-├── styles.css          # Estilos
-├── renderer.js         # Lógica do frontend
-├── main.js             # Processo principal
-├── preload.js          # Segurança
-└── package.json        # Dependências
-```
-
-## Tecnologias
+## Technologies
 
 - Electron
 - Monaco Editor
 - JavaScript ES6+
-
