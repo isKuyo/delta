@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta Remake</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/editor/editor.main.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Window Controls -->
+    <button class="control-btn minimize-btn" id="minimize-btn">
+      <img src="img/minimize.png" alt="Minimize">
+    </button>
+    <button class="control-btn maximize-btn" id="maximize-btn">
+      <img src="img/maximize.png" alt="Maximize">
+    </button>
+    <button class="control-btn close-btn" id="close-btn">
+      <img src="img/close.png" alt="Close">
+    </button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar"></div>
+
+    <!-- Nav Section -->
+    <div class="nav-section" id="nav-section">
+      <img src="img/compass.png" alt="Home" class="nav-icon">
+      <div class="nav-label">HOME</div>
+      <div class="nav-indicator"></div>
+    </div>
+
+    <!-- Home Page Container -->
+    <div class="home-page-container" id="home-page-container">
+      <!-- Search Container -->
+      <div class="search-container" id="search-container">
+        <img src="img/search.png" alt="Search" class="search-icon">
+        <input type="text" class="search-input" placeholder="Filter Items...">
+      </div>
+
+      <!-- Filter Buttons -->
+      <button class="filter-btn filter-txt" id="filter-txt">TXT</button>
+      <button class="filter-btn filter-lua" id="filter-lua">LUA</button>
+      <button class="filter-btn filter-all active" id="filter-all">ALL FILES</button>
+
+      <!-- File List -->
+      <div class="file-item" id="file-item">
+        <span class="file-name">Put your own scripts here</span>
+      </div>
+    </div>
+
+    <!-- Hide Navigation Button -->
+    <button class="hide-nav-btn" id="hide-nav-btn">
+      <img src="img/arrow.png" alt="Hide" style="width: 14px; height: 14px;">
+    </button>
+
+    <!-- Editor Area -->
+    <div class="editor-area" id="editor-area"></div>
+
+    <!-- Tabs -->
+    <div class="tabs-container" id="tabs-container">
+      <div class="tabs-list" id="tabs-list"></div>
+      <button class="add-tab-btn" id="add-tab-btn">
+        <img src="img/add.png" alt="Add">
+      </button>
+    </div>
+
+    <!-- Action Buttons Container -->
+    <div class="action-buttons-container">
+      <div class="action-buttons-left">
+        <button class="action-btn execute-btn" id="execute-btn">EXECUTE</button>
+        <button class="action-btn clear-btn" id="clear-btn">CLEAR</button>
+        <button class="action-btn open-btn" id="open-btn">OPEN</button>
+        <button class="action-btn save-btn" id="save-btn">SAVE</button>
+      </div>
+      <div class="action-buttons-right">
+        <button class="action-btn inject-btn" id="inject-btn">INJECT</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
+
