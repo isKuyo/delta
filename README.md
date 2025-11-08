@@ -1,6 +1,6 @@
 # Delta Remake
 
-Modern code editor built with Electron and Monaco Editor.
+Simple delta remake design in electron
 
 ## Installation
 
